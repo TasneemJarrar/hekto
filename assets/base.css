@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type:none
+}
+:root{
+  --mainfont: "Lato", sans-serif;
+  --primarycolor: #FB2E86;
+  --succsscolor: #08D15F;
+  --mainfontcolor: #0D0E43;
+}
+.container{
+  width: calc(100% - 300px);
+  margin: auto;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .btn{
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 2px;
+}
+.btn-primary{
+  background-color: var(--primarycolor);
+}
+.btn-success{
+  background-color: var(--succsscolor);
+}
