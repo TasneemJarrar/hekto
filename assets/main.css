@@ -7,10 +7,6 @@ body{
   justify-content: space-between;
   padding: 47px 0 35px;
 }
-.header .list{
-  display: flex;
-  gap: 35px;
-}
 .bar{
   display: none;
 }
@@ -48,4 +44,34 @@ body{
   .header .bar{
     display: block;
   }
+}
+/* header end */
+/* footer start */
+.footer{
+  background-color: #EEEFFB;
+  padding: 50px 0;
+}
+.footer .left-side{
+  align-items: flex-start;
+}
+.footer .left-side form{
+  border: solid 1px #E7E6EF;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.footer .left-side input{
+  border: none;
+  outline: none;
+  width: 200px;
+  padding-left: 5px;
+}
+.footer .left-side button{
+  border: none;
+  outline: none;
+  background-color: var(--primarycolor);
+  padding: 8px 13px;
+}
+.footer .right-side{
+  width: 60%;
 }
