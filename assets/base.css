@@ -15,17 +15,38 @@ ul{
   --succsscolor: #08D15F;
   --mainfontcolor: #0D0E43;
 }
-.container{
-  width: calc(100% - 300px);
+
+@media screen and (min-width: 1401px){
+  .container{
+  width: calc(100% - 320px);
   margin: auto;
+  }
+}
+@media screen and (max-width: 1400px){
+  .container{
+  width: calc(100% - 200px);
+  margin: auto;
+  }
+}
+@media screen and (max-width: 992){
+  .container{
+  width: calc(100% - 100px);
+  margin: auto;
+  }
+} 
+@media screen and (max-width: 570){
+  .container{
+  width: calc(100% - 50px);
+  margin: auto;
+  }
 }
 .row{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-
- .btn{
+.btn{
   border: none;
   outline: none;
   color: #fff;
