@@ -46,6 +46,21 @@ body{
   }
 }
 /* header end */
+/* newslater start */
+.newslater{
+  margin: 50px 0;
+  background: url("./img/public/newslater-bg.webp");
+  background-position: center;
+  background-size: cover;
+  padding: 175px 0;
+  text-align: center;
+}
+.newslater h2{
+  margin: 30px;
+  font-size: 35px;
+  color: #151875;
+} 
+/* newslater end */
 /* clients start */
 .clients{
   padding: 50px 0;
