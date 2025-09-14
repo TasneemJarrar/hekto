@@ -46,6 +46,68 @@ body{
   }
 }
 /* header end */
+/* product start */
+.featured-products{
+  margin: 50px 0;
+  padding: 50px 0;
+}
+.featured-products h2{
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.featured-products .row{
+  justify-content: flex-start;
+  gap: 15px ;
+}
+.featured-products .product{
+  flex: 1 0 150px;
+  box-shadow: 0px 0px 25px #0000001a;
+  border-radius: 4px;
+}
+.featured-products .product-image{
+  background-color: #F6F7FB;
+  height: 250px;
+  object-fit: contain;
+}
+.featured-products .color-option .color{
+  border: none;
+  border-radius: 10px;
+  width: 15px;
+  height: 3px;
+}
+.featured-products .color-option .color-1{
+  background-color: #05E6B7;
+}
+.featured-products .color-option .color-2{
+  background-color: #F701A8;
+}
+.featured-products .color-option .color-3{
+  background-color: #00009D;
+}
+.featured-products .color-option .color:focus{
+  border: black solid .2px;
+}
+.featured-products .product-info{
+  font-family: "Josefin Sans", sans-serif;
+}
+/* product end */
+/* slide indicator start */
+
+.slide-indicator .color{
+  border: none;
+  border-radius: 10px;
+  width: 15px;
+  height: 3px;
+  background-color: #FEBAD7;
+}
+.slide-indicator .color{
+  transition:all .5s ;
+}
+.slide-indicator .color:focus{
+  background-color: var(--primarycolor);width: 20px;
+}
+/* slide indicator end */
 /* newslater start */
 .newslater{
   margin: 50px 0;
@@ -58,7 +120,7 @@ body{
 .newslater h2{
   margin: 30px;
   font-size: 35px;
-  color: #151875;
+  font-family: "Josefin Sans", sans-serif;
 } 
 /* newslater end */
 /* clients start */
@@ -93,7 +155,6 @@ body{
     width: 100%;
   }
 }
-
 /* clients end */
 /* footer start */
 .footer{
@@ -149,6 +210,8 @@ body{
 }
 .footer .right-side h2{
   color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
 }
 .footer .right-side a{
   color: #8A8FB9;
