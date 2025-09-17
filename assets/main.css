@@ -46,6 +46,54 @@ body{
   }
 }
 /* header end */
+/* hero start */
+.hero{
+  background-color: #F2F0FF;
+  padding: 50px 0;
+}
+.hero .hero-content{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1 0 60%;
+}
+.hero-content .hero-lamp{
+  position: relative;
+  bottom: 72px;
+  right: 90px;
+  align-items: flex-start;
+  flex: 1 0 10%;
+}
+.hero-content .hero-lamp img{
+  width: 300%;
+}
+.hero .text-content{
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 1 0 90%;
+}
+.hero .text-content h1{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 170%;
+}
+.hero .text-content p{
+  line-height: 28px;
+}
+.hero .shop-btn{
+  margin-top: 20px;
+}
+.hero-image{
+  flex: 1 0 35%;
+}
+.hero-image img{
+  width: 100%;
+}
+@media screen and (max-width:576px){
+  
+}
+/* hero end */
 /*featured product start */
 .featured-products{
   padding: 50px 0;
@@ -59,7 +107,7 @@ body{
   gap: 15px ;
 }
 .featured-products .product{
-  flex: 1 0 150px;
+  flex: 1 0 200px;
   box-shadow: 0px 0px 25px #0000001a;
   border-radius: 4px;
 }
@@ -69,6 +117,9 @@ body{
   object-fit: contain;
   align-items: center;
   position: relative;
+}
+.featured-products .product-image .sofa-image{
+  margin-top: 10px;
 }
 .featured-products .action-buttons{
   text-align:start;
@@ -90,14 +141,16 @@ body{
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-.featured-products .action-buttons .action button:focus{
-  color: #6155F5;
+.featured-products .action-buttons .action button:focus {
   background-color: #eeeffb;
   box-shadow: 0px 0px 4px #0000000d;
 }
+.featured-products .action-buttons .action button:focus {
+  color:#6155F5
+}
 .product:hover .action-buttons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 .featured-products .details-btn{
   position: absolute;
@@ -152,7 +205,7 @@ body{
 .featured-products .product-detailes h3{
   transition: all .6s;
 }
-.product:hover .product-info {
+.product:hover .product-info{
   color: #fff;
 }
 .product:hover .color-option .color-3{
@@ -235,7 +288,6 @@ body{
   align-items: flex-start;
   flex-grow: 1;
 }
-
 .footer .left-side form{
   border-radius: 3px;
   display: flex;
@@ -297,7 +349,6 @@ body{
   .footer .left-side{
     align-items: center;
   }
-
 }
 /* footer end */
 /* Copyright start */
