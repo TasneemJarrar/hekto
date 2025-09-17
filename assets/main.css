@@ -212,21 +212,6 @@ body{
   background-color: #FFEAC1;
 }
 /* featured product end */
-/* slide indicator start */
-.slide-indicator .color{
-  border: none;
-  border-radius: 10px;
-  width: 15px;
-  height: 3px;
-  background-color: #FEBAD7;
-}
-.slide-indicator .color{
-  transition:all .5s ;
-}
-.slide-indicator .color:focus{
-  background-color: var(--primarycolor);width: 20px;
-}
-/* slide indicator end */
 /* newslater start */
 .newslater{
   background: url("./img/public/newslater-bg.webp");
