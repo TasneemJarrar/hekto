@@ -13,7 +13,7 @@ body{
 .list a{
   color: var(--mainfontcolor);
 }
-.header .active{
+.list a:hover{
   color: var(--primarycolor);
 }
 .search form{
@@ -49,19 +49,19 @@ body{
 /* hero start */
 .hero{
   background-color: #F2F0FF;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 .hero .hero-content{
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  flex: 1 0 60%;
+  flex: 1 0 50%;
 }
 .hero-content .hero-lamp{
   position: relative;
-  bottom: 72px;
-  right: 90px;
+  bottom: 175px;
+  right: 110px;
   align-items: flex-start;
   flex: 1 0 10%;
 }
@@ -72,36 +72,33 @@ body{
   align-items: flex-start;
   flex-wrap: wrap;
   flex: 1 0 90%;
+
 }
 .hero .text-content h1{
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   line-height: 170%;
 }
 .hero .text-content p{
   line-height: 28px;
+  font-family: "Lato", sans-serif;
 }
 .hero .shop-btn{
   margin-top: 20px;
 }
 .hero-image{
-  flex: 1 0 35%;
+  flex: 1 0 40%;
 }
 .hero-image img{
   width: 100%;
 }
-@media screen and (max-width:576px){
-  
-}
 /* hero end */
 /*featured product start */
 .featured-products{
-  padding: 50px 0;
+  padding: 100px 0;
 }
 .featured-products h2{
   margin-bottom: 50px;
   font-size: 32px;
-  font-family: "Josefin Sans", sans-serif;
 }
 .featured-products .row{
   gap: 15px ;
@@ -110,6 +107,7 @@ body{
   flex: 1 0 200px;
   box-shadow: 0px 0px 25px #0000001a;
   border-radius: 4px;
+  font-family: "Lato", sans-serif;
 }
 .featured-products .product-image{
   background-color: #F6F7FB;
@@ -148,7 +146,7 @@ body{
 .featured-products .action-buttons .action button:focus {
   color:#6155F5
 }
-.product:hover .action-buttons {
+.featured-products .product:hover .action-buttons {
   display: flex;
   gap: 10px;
 }
@@ -159,7 +157,7 @@ body{
   display: none;
   transition: all .6s;
 }
-.product:hover .details-btn {
+.featured-products .product:hover .details-btn {
   display: block;
 }
 .featured-products .details-btn:hover{
@@ -193,25 +191,112 @@ body{
   font-family: "Josefin Sans", sans-serif;
   transition: all .6s;
 }
-.product:hover .product-detailes{
+.featured-products .product:hover .product-detailes{
   background-color: #2F1AC4;
 }
 .featured-products .product-detailes{
   transition: all .6s;
 }
-.product:hover .product-detailes h3{
+.featured-products .product:hover .product-detailes h3{
   color: #fff;
 }
 .featured-products .product-detailes h3{
   transition: all .6s;
 }
-.product:hover .product-info{
+.featured-products .product:hover .product-info{
   color: #fff;
 }
-.product:hover .color-option .color-3{
+.featured-products .product:hover .color-option .color-3{
   background-color: #FFEAC1;
 }
 /* featured product end */
+/* leatest products start */
+.leatest-products{
+  padding-bottom: 100px;
+}
+.leatest-products ul .item{
+  cursor: pointer;
+}
+.leatest-products ul .item:hover{
+  color: var(--primarycolor);
+}
+.leatest-products ul .item:focus{
+  color: var(--primarycolor);
+  text-decoration: underline;
+}
+.leatest-products .product{
+  width: calc((100% - 60px) / 3);
+  flex-wrap: wrap;
+  flex: 1 0 300px;
+  justify-content: center;
+  position: relative;
+}
+.leatest-products .product-img{
+  height: 300px;
+  object-fit: contain;
+  background-color: #F7F7F7;
+  justify-content: center;
+}
+.leatest-products .product-img img{
+  height: 230px;
+}
+.leatest-products .sale-badge{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: none;
+}
+.leatest-products .action-buttons{
+  text-align:start;
+  position: absolute;
+  left: 10px;
+  bottom: 80px;
+  display: none;
+}
+.leatest-products .action-buttons .action{
+  align-items: baseline;
+}
+.leatest-products .action-buttons .action button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.leatest-products .product:hover .product-img{
+  background-color: white;
+}
+.leatest-products .product:hover .action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.leatest-products .product:hover .sale-badge {
+  display: block;
+}
+.leatest-products .action-buttons .action button:focus {
+  background-color: #eeeffb;
+  box-shadow: 0px 0px 4px #0000000d;
+}
+.leatest-products .action-buttons .action button:focus {
+  color:#6155F5
+}
+.leatest-products .product-info .underline{
+  background-color: #EEEFFB;
+  border: none;
+  outline: none;
+  height: 2px;
+}
+.leatest-products .product-info .sale-price{
+  font-size: 14px;
+}
+.leatest-products .product-info .real-price{
+  font-size: 12px;
+}
+/* leatest products end */
 /* newslater start */
 .newslater{
   background: url("./img/public/newslater-bg.webp");
@@ -223,13 +308,11 @@ body{
 .newslater h2{
   margin: 30px;
   font-size: 35px;
-  font-family: "Josefin Sans", sans-serif;
 }
 /* newslater end */
 /* clients start */
 .clients{
-  margin: 50px 0;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 .clients .row{
   flex-wrap: nowrap;
