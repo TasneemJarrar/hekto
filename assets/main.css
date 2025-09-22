@@ -322,6 +322,86 @@ body{
   font-family: "Lato", sans-serif;
 }
 /* services end */
+/* trending products start */
+.trending-products{
+  padding-bottom: 100px;
+}
+.trending-products h2{
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+.trending-products .product{
+  flex: 1 0 150px;
+  box-shadow: 0px 0px 25px #0000001a;
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+}
+.trending-products .product-image{
+  background-color: #F6F7FB;
+  margin: 10px;
+  height: 270px;
+  object-fit: contain;
+  position: relative;
+}
+.trending-products .product-image .sofa-image{
+  margin-top: 10px;
+  width: 150px;
+}
+.trending-products .action-buttons{
+  text-align:start;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: none;
+}
+.trending-products .action-buttons .action{
+  align-items: baseline;
+}
+.trending-products .action-buttons .action button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.trending-products .action-buttons .action button:focus {
+  background-color: #eeeffb;
+  box-shadow: 0px 0px 4px #0000000d;
+}
+.trending-products .action-buttons .action button:focus {
+  color:#6155F5
+}
+.trending-products .product:hover .action-buttons {
+  display: flex;
+  gap: 10px;
+}
+.trending-products .trendy-product{
+  height: 270px;
+}
+.trending-products .trendy-clock{
+  background-color: #FFF6FB;
+  padding: 30px 5px 30px 30px;
+  flex: 1 0 35%;
+}
+.trending-products .trendy-shelf{
+  background-color: #EEEFFB;
+  padding: 30px 5px 30px 30px;
+  flex: 1 0 35%;
+}
+.trending-products .trendy-seat{
+  flex: 1 0 20%;
+}
+.trending-products a{
+  font-family: 'lato';
+}
+.trending-products .seat-chair-img{
+  background-color: #F5F6F8;
+  padding: 0 10px;
+}
+/* trending products end */
 /* newslater start */
 .newslater{
   background: url("./img/public/newslater-bg.webp");
