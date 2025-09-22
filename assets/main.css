@@ -106,7 +106,7 @@ body{
   gap: 15px ;
 }
 .featured-products .product{
-  flex: 1 0 200px;
+  flex: 1 0 180px;
   box-shadow: 0px 0px 25px #0000001a;
   border-radius: 4px;
   font-family: "Lato", sans-serif;
@@ -119,7 +119,7 @@ body{
   position: relative;
 }
 .featured-products .product-image .img{
-  width: 200px;
+  width: 180px;
 }
 .featured-products .product-image .sofa-image{
   margin-top: 10px;
