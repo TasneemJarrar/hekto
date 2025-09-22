@@ -62,16 +62,6 @@ body {
   justify-content: space-between;
   flex: 1 0 50%;
 }
-.hero-content .hero-lamp {
-  position: relative;
-  bottom: 175px;
-  right: 110px;
-  align-items: flex-start;
-  flex: 1 0 10%;
-}
-.hero-content .hero-lamp img {
-  width: 300%;
-}
 .hero .text-content {
   align-items: flex-start;
   flex-wrap: wrap;
