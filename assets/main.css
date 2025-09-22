@@ -118,6 +118,9 @@ body{
   align-items: center;
   position: relative;
 }
+.featured-products .product-image .img{
+  width: 200px;
+}
 .featured-products .product-image .sofa-image{
   margin-top: 10px;
 }
@@ -190,7 +193,6 @@ body{
   border: black solid .2px;
 }
 .featured-products .product-info{
-  font-family: "Josefin Sans", sans-serif;
   transition: all .6s;
 }
 .featured-products .product:hover .product-detailes{
@@ -215,6 +217,9 @@ body{
 /* leatest products start */
 .leatest-products{
   padding-bottom: 100px;
+}
+.leatest-products h2{
+  font-size: 32px;
 }
 .leatest-products ul .item{
   cursor: pointer;
@@ -305,6 +310,7 @@ body{
 }
 .services h2{
   padding-bottom: 50px;
+  font-size: 32px;
 }
 .service{
   flex: 1 0 250px;
