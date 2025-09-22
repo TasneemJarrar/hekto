@@ -53,7 +53,7 @@ body {
 /* hero start */
 .hero {
   background-color: #f2f0ff;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .hero .hero-content {
   flex-direction: row;
@@ -69,6 +69,7 @@ body {
 }
 .hero .text-content h1 {
   font-weight: 400;
+  font-size: 53px;
   line-height: 170%;
 }
 .hero .text-content p {
