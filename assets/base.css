@@ -28,13 +28,13 @@ ul{
   margin: auto;
   }
 }
-@media screen and (max-width: 992){
+@media screen and (max-width: 992px){
   .container{
   width: calc(100% - 100px);
   margin: auto;
   }
 } 
-@media screen and (max-width: 570){
+@media screen and (max-width: 570px){
   .container{
   width: calc(100% - 50px);
   margin: auto;
